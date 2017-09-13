@@ -1,0 +1,157 @@
+body {
+  /*font-family: 'Copse', serif;*/
+  font-family: 'Merriweather', serif;
+  background-color: white;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand > img {
+  width: auto;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggle {
+  z-index: 1;
+}
+
+
+.navbar-inverse {
+	background-image: /*url(../images/nav-bg-img.jpg)*/none;
+	background-color: #262626;
+  border-radius: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  font-size: 15px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #42A862;
+  transition: .25s ease-in;
+}
+
+.img-thumbnail {
+  width: 500px;
+  height: 200px;
+}
+
+.section-separator { /*The dotted lines before another section*/
+  border-bottom: 2px dotted rgb(172,172,172);
+  margin: 20px;
+}
+
+.navbar {
+  min-height: 90px;  
+}
+
+
+.newest-blog {
+  text-align: center;
+  margin: 30px;
+  border-top: 2px dotted rgb(172,172,172);
+  border-bottom: 2px dotted rgb(172,172,172);
+  margin-top: 80px;
+ }
+
+.author-image {
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+a.fa.fa-facebook-square.fa-lg::before {
+  color: #4267b2;
+  font-size: 40px;
+}
+
+a.fa.fa-twitter-square.fa-lg::before {
+  color: #1da1f2;
+  font-size: 40px;
+}
+
+a.fa-google-plus-square.fa-lg::before {
+  color: #d34836;
+  font-size: 40px;
+}
+
+a.fa.fa-github-square.fa-lg::before {
+  color: black;
+  font-size: 40px;
+}
+
+
+a.fa.fa-facebook-square.fa-lg:hover {
+  text-decoration: none;
+} 
+
+a.fa.fa-twitter-square.fa-lg:hover {
+  text-decoration: none;
+} 
+
+a.fa.fa-google-plus-square.fa-lg:hover {
+  text-decoration: none;
+} 
+
+a.fa.fa-github-square.fa-lg:hover {
+  text-decoration: none;
+} 
+
+a.list-group-item {
+  border: none;
+}
+
+
+.read-more {
+  color: #333;
+}
+
+.read-more:hover {
+  color: #42A862;
+  transition: .20s ease-in;
+  text-decoration: none;
+}
+
+
+.footer-container {
+  background-color: white;
+}
+
+.sub-footer {
+  margin-bottom: 20px;
+}
+
+.about {
+  color: #333;
+}
+
+.about:hover {
+  color: #42A862;
+  transition: .20s ease-in;
+  text-decoration: none;
+}
+
+.footer-container {
+  background-color: #262626;
+  color: #e6fff7;
+}
+
