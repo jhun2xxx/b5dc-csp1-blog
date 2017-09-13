@@ -45,13 +45,16 @@ body {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #42A862;
-  transition: .25s ease-in;
+  color: rgb(29,119,93);
+  border-top: 2px dotted white;
+  border-bottom: 2px dotted white;
+  transition: .30s ease-in;
+  text-shadow: 1px 1px rgb(29,119,93);
 }
 
 .img-thumbnail {
-  width: 500px;
-  height: 200px;
+  width: 400px;
+  height: 350px;
 }
 
 .section-separator { /*The dotted lines before another section*/
@@ -66,10 +69,11 @@ body {
 
 .newest-blog {
   text-align: center;
-  margin: 30px;
-  border-top: 2px dotted rgb(172,172,172);
-  border-bottom: 2px dotted rgb(172,172,172);
-  margin-top: 80px;
+  border-top: 2px dotted white;
+  border-bottom: 2px dotted white;
+  background-color: rgba(29,119,93,.7);
+  margin: 50px;
+  color: white;
  }
 
 .author-image {
@@ -126,9 +130,9 @@ a.list-group-item {
 }
 
 .read-more:hover {
-  color: #42A862;
+  color: rgb(29,119,93);
   transition: .20s ease-in;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 
@@ -155,3 +159,24 @@ a.list-group-item {
   color: #e6fff7;
 }
 
+.image-banner {
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: rgba(29,119,93,.7);
+  color: white;
+}
+
+.arc-month {
+  font-size: 20px;
+  border-top: 2px dotted white;
+  border-bottom: 2px dotted white;
+  background-color: rgba(29,119,93,.7);
+  margin: 20px;
+  color: black;
+}
+
+li.arc-month > a {
+  color: white;
+}
