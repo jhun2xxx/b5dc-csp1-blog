@@ -1,7 +1,17 @@
-body {
-  /*font-family: 'Copse', serif;*/
-  font-family: 'Merriweather', serif;
-  background-color: white;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: 'Shadows Into Light Two', cursive;
+  background-color: #f9f4f4;
+  height: 100%;
+  letter-spacing: 2px;
+}
+
+nav {
+  margin: 20px 20px 15px 20px;
 }
 
 .navbar-brand {
@@ -9,9 +19,11 @@ body {
 }
 
 .navbar-brand > img {
+  height: 100px;
   width: auto;
-  padding: 15px;
-  margin-top: 50px;
+  padding: 8px;
+  z-index: 9;
+  margin-top: 3px;
 }
 
 .brand-centered {
@@ -32,24 +44,28 @@ body {
   z-index: 1;
 }
 
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
+}
 
 .navbar-inverse {
 	background-image: /*url(../images/nav-bg-img.jpg)*/none;
-	background-color: #262626;
+	background: rgba(0, 0, 0, .8);
   border-radius: 0;
+  border: none;
 }
 
 .navbar-inverse .navbar-nav > li > a {
   color: white;
-  font-size: 15px;
+  font-size: 14px;
+  letter-spacing: 2px;
+
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: rgb(29,119,93);
-  border-top: 2px dotted white;
-  border-bottom: 2px dotted white;
+  color: #f9f9f9;
+  background: #e3973a;
   transition: .30s ease-in;
-  text-shadow: 1px 1px rgb(29,119,93);
 }
 
 .img-thumbnail {
@@ -62,18 +78,19 @@ body {
   margin: 20px;
 }
 
-.navbar {
-  min-height: 90px;  
-}
 
 
 .newest-blog {
   text-align: center;
   border-top: 2px dotted white;
   border-bottom: 2px dotted white;
-  background-color: rgba(29,119,93,.7);
+  background-color: rgb(183, 189, 193);
   margin: 50px;
-  color: white;
+  color: #232222;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 12px;
  }
 
 .author-image {
@@ -85,22 +102,22 @@ body {
 
 a.fa.fa-facebook-square.fa-lg::before {
   color: #4267b2;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 a.fa.fa-twitter-square.fa-lg::before {
   color: #1da1f2;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 a.fa-google-plus-square.fa-lg::before {
   color: #d34836;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 a.fa.fa-github-square.fa-lg::before {
   color: black;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 
@@ -125,38 +142,36 @@ a.list-group-item {
 }
 
 
-.read-more {
-  color: #333;
-}
-
-.read-more:hover {
-  color: rgb(29,119,93);
-  transition: .20s ease-in;
-  text-decoration: underline;
-}
-
-
-.footer-container {
-  background-color: white;
-}
 
 .sub-footer {
-  margin-bottom: 20px;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+ul.list-inline {
+  margin: 20px;
 }
 
 .about {
+  font-weight: 500;
   color: #333;
+  text-decoration: underline;
 }
 
 .about:hover {
-  color: #42A862;
+  color: #de9437;
+  font-weight: 600;
   transition: .20s ease-in;
   text-decoration: none;
 }
 
 .footer-container {
   background-color: #262626;
-  color: #e6fff7;
+  color: #8d8e8d;
+  padding: 40px;
+  font-size: 11px;
 }
 
 .image-banner {
@@ -180,3 +195,85 @@ a.list-group-item {
 li.arc-month > a {
   color: white;
 }
+
+
+
+header {
+  height: 85%;
+  margin-bottom: 10px;
+}
+
+.item {
+  height: 100%;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#image1 {
+    background-image:url('../images/lost-found-search.jpg');
+}
+
+
+.intro {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+div.gallery {
+  margin: 8px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.galleryContainer {
+  margin: auto;
+  width: 70%;
+  height: auto;
+  /*padding: 10px;*/
+}
+
+.more-container {
+  text-align: center;
+  margin: auto;
+}
+.more {
+  display: inline-block;
+}
+
+.more a {
+  color: #333533;
+  text-decoration: underline;
+}
+
+.more a:hover {
+  transition: .15s ease-in;
+  color: #de9437;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
