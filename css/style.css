@@ -10,6 +10,8 @@ html, body {
   letter-spacing: 2px;
 }
 
+/* ------------ NAVBAR ------------ */
+
 nav {
   margin: 20px 20px 15px 20px;
 }
@@ -73,20 +75,19 @@ nav {
   height: 350px;
 }
 
+
 .section-separator { /*The dotted lines before another section*/
   border-bottom: 2px dotted rgb(172,172,172);
   margin: 20px;
 }
 
-
-
 .newest-blog {
   text-align: center;
   border-top: 2px dotted white;
   border-bottom: 2px dotted white;
-  background-color: rgb(183, 189, 193);
-  margin: 50px;
-  color: #232222;
+  background-color: rgb(249, 161, 51);
+  margin: 40px 0 30px 0;
+  color: #333030;
   font-size: 19px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -120,7 +121,6 @@ a.fa.fa-github-square.fa-lg::before {
   font-size: 30px;
 }
 
-
 a.fa.fa-facebook-square.fa-lg:hover {
   text-decoration: none;
 } 
@@ -141,13 +141,15 @@ a.list-group-item {
   border: none;
 }
 
-
-
 .sub-footer {
-  margin: 20px;
+  margin: 24px;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 3px;
+}
+
+.aboutsub {
+  margin-bottom: 8px;
 }
 
 ul.list-inline {
@@ -161,16 +163,16 @@ ul.list-inline {
 }
 
 .about:hover {
-  color: #de9437;
+  color: #f9a133;
   font-weight: 600;
-  transition: .20s ease-in;
-  text-decoration: none;
+  transition: .15s ease-in;
+  text-decoration: underline;
 }
 
 .footer-container {
   background-color: #262626;
   color: #8d8e8d;
-  padding: 40px;
+  padding: 40px 40px 30px 40px;
   font-size: 11px;
 }
 
@@ -196,8 +198,6 @@ li.arc-month > a {
   color: white;
 }
 
-
-
 header {
   height: 85%;
   margin-bottom: 10px;
@@ -217,7 +217,7 @@ header {
   -o-background-size: cover;
 }
 
-#image1 {
+#image {
     background-image:url('../images/lost-found-search.jpg');
 }
 
@@ -235,6 +235,18 @@ div.gallery {
   width: 100%;
 }
 
+div.gallery-single {
+  margin: 8px;
+  /*border: 1px solid #ccc;*/
+  float: left;
+  width: 100%;
+}
+
+div.gallery-single img {
+  width: 100%;
+  height: auto;
+}
+
 div.gallery:hover {
   border: 1px solid #777;
 }
@@ -250,7 +262,7 @@ div.desc {
 }
 
 div.galleryContainer {
-  margin: auto;
+  margin: 0 auto;
   width: 70%;
   height: auto;
   /*padding: 10px;*/
@@ -262,18 +274,149 @@ div.galleryContainer {
 }
 .more {
   display: inline-block;
+  margin: 30px 0 25px 0;
 }
 
 .more a {
-  color: #333533;
+  color: #fbfbfb;
+  background: #f9a133;
+  font-weight: 600;
   text-decoration: underline;
+  padding: 11px 3px 11px 3px;
+  border-radius: 1px;
+  font-size: 15px;
+}
+
+.moreborder {
+  border: 1.5px solid white;
+  padding: 7px;
+  border-radius: 1px;
 }
 
 .more a:hover {
-  transition: .15s ease-in;
-  color: #de9437;
+  color: #f9a133;
+  background: #f9f4f4;
+  text-decoration: underline;
   font-weight: 600;
-  text-decoration: none;
-
+  transition: .15s ease-in;
 }
 
+.paging a {
+  margin: 4px;
+  width: 38px;
+}
+
+.pagination > li > a,
+ .pagination > li > span {
+  background-color: #f9a133;
+  color: white;
+  border: 2px solid white;
+}
+
+.pagination > li > a:hover,
+ .pagination > li > span:hover {
+  color: #f9a133;
+  font-weight: 600;
+  border: 2px solid white;
+}
+
+a.paging-entry {
+  width: 120px;
+}
+
+div.desc2{
+  margin-top: 10px;
+  padding: 10px;
+  text-align: justify;
+}
+
+label {
+  width: 100%;
+  /*border-top: 1px solid #f9a133;*/
+  border-bottom: 1px solid #f9a133;
+  padding: 5px;
+  color: #525252;
+}
+
+.post-info {
+  font-size: 12px;
+}
+
+div.comments {
+  margin: auto;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+}
+
+.post-comment {
+  width: 50%;
+  margin: 15px auto 10px auto;
+  min-height: 80px;
+  display: block;
+}
+
+.btn-comment {
+  width: 80px;
+  margin: 20px;
+  background: #f9a133;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.textboxes {
+  display: block;
+  width: 50%;
+  margin: 18px auto 2px auto;
+}
+
+
+article {
+  height: 100%;
+}
+
+
+.carousel,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.fill2 {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#imagea {
+    background-image:url('../images/krako.jpg');
+}
+
+#imageb {
+    background-image:url('../images/krako.jpg');
+}
+
+#imagec {
+    background-image:url('../images/krako.jpg');
+}
+
+#imaged {
+    background-image:url('../images/1.jpeg');
+}
+
+#imagee {
+    background-image:url('../images/1.jpeg');
+}
+
+#imagef {
+    background-image:url('../images/1.jpeg');
+}
